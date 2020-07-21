@@ -1,0 +1,70 @@
+#searchValue
+{
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    margin-left: 15px;
+}
+ 
+#searchBtn
+{
+    height: 50px;
+    width: 150px;
+    background: #ffeb3b;
+    border: none;
+    color: 000;
+    border-radius: 25px;
+}
+
+#searchBtn:hover
+{
+    background: #ffc107;
+    cursor: pointer;
+}
+
+.searchpage
+{
+    border: 1px solid grey;
+    margin-top: 30px;
+    border-radius: 25px;
+    padding: 0px;
+}
+
+.card
+{
+    display: flex;
+}
+
+.innerCard
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.outer
+{
+    padding: 20px;
+    margin: 20px;
+    outline: none;
+    border: none;
+}
+
+#sortBtn
+{
+    height: 50px;
+    width: 150px;
+    background: green;
+    border: none;
+    color: 000;
+    border-radius: 25px;
+}
+
+#git
+{
+    margin-top: 35px;
+    font-size: x-large;
+    margin-left: 230px;
+}

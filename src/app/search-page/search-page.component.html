@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="container searchpage col-sm-4">
+        <form (ngSubmit)="onSubmit()">
+            <input type="text" id="searchValue" placeholder="Enter name here" [(ngModel)]="searchValue" name="serachValue"> 
+            <button id=searchBtn style="margin-left: 10px;" class="float-right"> Search</button>
+        </form>
+    </div>
+    <div class="col-sm-4" style="margin-top: 30px;">
+        <button id=sortBtn style="margin-left: 10px;" (click)="sort()"> Sort</button>
+    </div>
+</div>
+    
+<div class="row outer" >
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-6 card" style="border: none;">
+        <div *ngIf="userList; else elseBlock" class="innerCard">
+            <div *ngFor="let user of userList">
+                <div style="width: 13rem;">
+                    <img class="card-img-top" src={{user.avatar_url}} alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">{{user.login}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+    </div>
+    <ng-template #elseBlock>
+    </ng-template>
+</div>
